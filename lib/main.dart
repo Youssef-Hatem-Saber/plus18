@@ -46,25 +46,25 @@ class _MyHomePageState extends State<MyHomePage> {
     SizeConfig.init(context);
     return Scaffold(body: SafeArea(
       child: Padding(
-        padding: EdgeInsets.all(SizeConfig.defultSize! *1),
+        padding: EdgeInsets.all(SizeConfig.defaultSize! *1),
         child: Column(children: [
-          SizedBox(height: SizeConfig.defultSize! * 5,),
+          SizedBox(height: SizeConfig.defaultSize! * 5,),
 
           Image.asset("asset/icon.jpg"),
-          SizedBox(height: SizeConfig.defultSize! * 5,),
+          SizedBox(height: SizeConfig.defaultSize! * 5,),
 
           Column(
           children: [
-            CustomGeneralButton(text: 'سنة اولى جامعة', onPressed: () {
+            CustomGeneralButton2(text: 'سنة اولى جامعة', onPressed: () {
               Navigator.push(context,MaterialPageRoute(builder: (context) => const CollagePage(),) );
             },),
-            SizedBox(height: SizeConfig.defultSize! * 5,),
-            CustomGeneralButton(text: 'سنة اولى شغل', onPressed: () {
+            SizedBox(height: SizeConfig.defaultSize! * 5,),
+            CustomGeneralButton2(text: 'سنة اولى شغل', onPressed: () {
               Navigator.push(context,MaterialPageRoute(builder: (context) => const WorkPage(),) );
 
             },),
-            SizedBox(height: SizeConfig.defultSize! * 5,),
-            CustomGeneralButton(text: 'سنة اولى جواز ومامي', onPressed: () {
+            SizedBox(height: SizeConfig.defaultSize! * 5,),
+            CustomGeneralButton2(text: 'سنة اولى جواز ومامي', onPressed: () {
               Navigator.push(context,MaterialPageRoute(builder: (context) => const MarraigePage(),) );
             },),
           ],)
